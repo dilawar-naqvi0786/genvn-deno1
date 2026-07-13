@@ -16,15 +16,15 @@
 
     <style>
         :root {
-            --primary: #0f172a;
-            --secondary: #1e293b;
+            --primary: #172054;
+            --secondary: #1e3a8a;
             --accent: #f97316;
             --accent-light: #fb923c;
             --text: #334155;
             --text-light: #64748b;
             --bg: #f8fafc;
             --white: #ffffff;
-            --gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --gradient: linear-gradient(135deg, #172054 0%, #1e3a8a 100%);
             --gradient-accent: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
         }
 
@@ -54,7 +54,7 @@
             background: var(--bg);
         }
         ::-webkit-scrollbar-thumb {
-            background: var(--accent);
+            background: var(--primary);
             border-radius: 5px;
         }
 
@@ -125,12 +125,12 @@
             z-index: 1000;
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 20px rgba(23, 32, 84, 0.08);
             transition: all 0.3s;
         }
 
         nav.scrolled {
-            box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 30px rgba(23, 32, 84, 0.15);
         }
 
         .nav-container {
@@ -183,7 +183,7 @@
         }
 
         .nav-links a:hover {
-            color: var(--accent);
+            color: var(--primary);
         }
 
         .nav-links a:hover::after {
@@ -378,8 +378,8 @@
 
         .section-tag {
             display: inline-block;
-            background: rgba(249,115,22,0.1);
-            color: var(--accent);
+            background: rgba(23, 32, 84, 0.1);
+            color: var(--primary);
             padding: 0.5rem 1rem;
             border-radius: 50px;
             font-size: 0.875rem;
@@ -437,7 +437,7 @@
         }
 
         .process-step {
-            background: var(--bg);
+            background: rgba(23, 32, 84, 0.05);
             padding: 0.75rem 1.25rem;
             border-radius: 8px;
             font-weight: 600;
@@ -463,7 +463,7 @@
             border-radius: 20px;
             padding: 3rem;
             color: var(--white);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 20px 40px rgba(23, 32, 84, 0.3);
             position: relative;
             overflow: hidden;
         }
@@ -513,9 +513,9 @@
             background: var(--white);
             border-radius: 16px;
             padding: 2.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px -1px rgba(23, 32, 84, 0.1);
             transition: all 0.3s;
-            border: 1px solid rgba(0,0,0,0.05);
+            border: 1px solid rgba(23, 32, 84, 0.05);
             position: relative;
             overflow: hidden;
         }
@@ -534,7 +534,7 @@
 
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(23, 32, 84, 0.15);
         }
 
         .service-card:hover::before {
@@ -544,19 +544,19 @@
         .service-icon {
             width: 60px;
             height: 60px;
-            background: rgba(249,115,22,0.1);
+            background: rgba(23, 32, 84, 0.1);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.5rem;
-            color: var(--accent);
+            color: var(--primary);
             margin-bottom: 1.5rem;
             transition: all 0.3s;
         }
 
         .service-card:hover .service-icon {
-            background: var(--accent);
+            background: var(--primary);
             color: var(--white);
             transform: rotate(360deg);
         }
@@ -610,9 +610,9 @@
         }
 
         .feature-box:hover {
-            border-color: var(--accent);
+            border-color: var(--primary);
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(249,115,22,0.1);
+            box-shadow: 0 10px 30px rgba(23, 32, 84, 0.1);
         }
 
         .feature-icon {
@@ -718,20 +718,20 @@
             border-radius: 20px;
             padding: 3rem 2rem;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(23, 32, 84, 0.08);
             position: relative;
             overflow: hidden;
             transition: all 0.3s;
         }
 
         .model-card.featured {
-            border: 2px solid var(--accent);
+            border: 2px solid var(--primary);
             transform: scale(1.05);
         }
 
         .model-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(23, 32, 84, 0.15);
         }
 
         .model-card.featured:hover {
@@ -742,7 +742,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            background: var(--accent);
+            background: var(--primary);
             color: var(--white);
             padding: 0.5rem 1rem;
             font-size: 0.75rem;
@@ -753,13 +753,13 @@
         .model-icon {
             width: 100px;
             height: 100px;
-            background: rgba(249,115,22,0.1);
+            background: rgba(23, 32, 84, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 2.5rem;
-            color: var(--accent);
+            color: var(--primary);
             margin: 0 auto 1.5rem;
         }
 
@@ -791,7 +791,7 @@
         }
 
         .model-features i {
-            color: var(--accent);
+            color: var(--primary);
             font-size: 0.875rem;
         }
 
@@ -826,17 +826,19 @@
             background: var(--bg);
             border-radius: 12px;
             transition: all 0.3s;
+            border: 1px solid transparent;
         }
 
         .contact-item:hover {
             transform: translateX(10px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(23, 32, 84, 0.1);
+            border-color: rgba(23, 32, 84, 0.1);
         }
 
         .contact-icon {
             width: 50px;
             height: 50px;
-            background: var(--gradient-accent);
+            background: var(--gradient);
             color: var(--white);
             border-radius: 10px;
             display: flex;
@@ -859,14 +861,14 @@
         }
 
         .contact-item a:hover {
-            color: var(--accent);
+            color: var(--primary);
         }
 
         .contact-form {
             background: var(--bg);
             padding: 3rem;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(23, 32, 84, 0.08);
         }
 
         .form-group {
@@ -898,8 +900,8 @@
         .form-group textarea:focus,
         .form-group select:focus {
             outline: none;
-            border-color: var(--accent);
-            box-shadow: 0 0 0 3px rgba(249,115,22,0.1);
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(23, 32, 84, 0.1);
         }
 
         .form-group textarea {
@@ -910,7 +912,7 @@
         .btn-submit {
             width: 100%;
             padding: 1rem;
-            background: var(--gradient-accent);
+            background: var(--gradient);
             color: var(--white);
             border: none;
             border-radius: 8px;
@@ -926,7 +928,7 @@
 
         .btn-submit:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(249,115,22,0.3);
+            box-shadow: 0 10px 20px rgba(23, 32, 84, 0.3);
         }
 
         .btn-submit:active {
@@ -1091,7 +1093,7 @@
             background: var(--white);
             z-index: 1001;
             padding: 2rem;
-            box-shadow: -5px 0 30px rgba(0,0,0,0.1);
+            box-shadow: -5px 0 30px rgba(23, 32, 84, 0.1);
             transition: right 0.3s;
         }
 
@@ -1135,7 +1137,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.5);
+            background: rgba(23, 32, 84, 0.5);
             z-index: 1000;
             opacity: 0;
             visibility: hidden;
@@ -1171,7 +1173,7 @@
             width: 50px;
             height: 50px;
             border: 4px solid #e2e8f0;
-            border-top-color: var(--accent);
+            border-top-color: var(--primary);
             border-radius: 50%;
             animation: spin 1s linear infinite;
         }
@@ -1395,7 +1397,7 @@
                         <li>IT & technical support staff</li>
                         <li>Multi-skilled technicians</li>
                         <li>Helpers & support staff</li>
-                        <li style="color: var(--accent); font-weight: 600; margin-top: 0.5rem;">Models: Short-Term | Project | Ongoing</li>
+                        <li style="color: var(--primary); font-weight: 600; margin-top: 0.5rem;">Models: Short-Term | Project | Ongoing</li>
                     </ul>
                 </div>
 
@@ -1581,7 +1583,7 @@
                 </div>
             </div>
             
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(249,115,22,0.1); border-radius: 12px; border: 2px dashed var(--accent);" class="animate-on-scroll">
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(23, 32, 84, 0.05); border-radius: 12px; border: 2px dashed var(--primary);" class="animate-on-scroll">
                 <h3 style="color: var(--primary); margin-bottom: 0.5rem;"><i class="fas fa-exclamation-circle" style="color: var(--accent);"></i> Emergency / Breakdown Support</h3>
                 <p style="color: var(--text);">24/7 support availability for urgent operational and maintenance requirements. Immediate mobilization capability.</p>
             </div>
@@ -1840,38 +1842,6 @@
         };
 
         window.addEventListener('scroll', animateOnScroll);
-        
-        // Counter animation for hero stats
-        const animateValue = (obj, start, end, duration) => {
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                obj.innerHTML = Math.floor(progress * (end - start) + start);
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-                }
-            };
-            window.requestAnimationFrame(step);
-        };
-
-        // Trigger counter animation when hero is visible
-        const heroObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // Animate stats if they contain numbers
-                    document.querySelectorAll('.stat-number').forEach(stat => {
-                        if (!isNaN(parseInt(stat.innerText))) {
-                            const finalValue = parseInt(stat.innerText);
-                            animateValue(stat, 0, finalValue, 2000);
-                        }
-                    });
-                    heroObserver.disconnect();
-                }
-            });
-        });
-
-        heroObserver.observe(document.querySelector('.hero'));
     </script>
 </body>
 </html>
